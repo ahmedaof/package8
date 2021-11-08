@@ -430,10 +430,10 @@
         // $("#showresult1").click(function () {
         //     $("#carouselExampleFade").carousel(1)
         // })
-        // $(".second").click(function () {
-        //     location.reload();
+        $(".second").click(function () {
+      location.reload();
 
-        // })
+         })
 
 
         // var fail = new Audio("./all/sound/3- عذراً لم تجتز الاختبار.wav");
@@ -475,7 +475,7 @@
                 a0.disabled = true
                 a1.disabled = false
                 a0.setAttribute("style", "background-color:  #7eaf93  ")
-                a1.setAttribute("style", "background-color:#efefef")
+                a1.setAttribute("style", "background-color:#    d9e8e0")
             } else if (e.target.id == 'a1') {
                 document.getElementById('quary1').disabled = false
 
@@ -497,7 +497,7 @@
                 console.log(countTrueAnswer)
                 a0.disabled = false
                 a1.disabled = true
-                a0.setAttribute("style", "background-color:#efefef")
+                a0.setAttribute("style", "background-color:#    d9e8e0")
                 a1.setAttribute("style", "background-color:  #7eaf93  ")
             }
 
@@ -525,7 +525,7 @@
                 s0.disabled = true
                 s1.disabled = false
                 s0.setAttribute("style", "background-color:  #7eaf93  ")
-                s1.setAttribute("style", "background-color:#efefef")
+                s1.setAttribute("style", "background-color:#    d9e8e0")
             } else if (e.target.id == 's1') {
                 any = 0;
                 counterAnswer += 1
@@ -546,7 +546,7 @@
                 console.log(countTrueAnswer)
                 s0.disabled = false
                 s1.disabled = true
-                s0.setAttribute("style", "background-color:#efefef")
+                s0.setAttribute("style", "background-color:#    d9e8e0")
                 s1.setAttribute("style", "background-color:  #7eaf93  ")
             }
 
@@ -578,7 +578,7 @@
                 d0.disabled = true
                 d1.disabled = false
                 d0.setAttribute("style", "background-color:  #7eaf93  ")
-                d1.setAttribute("style", "background-color:#efefef")
+                d1.setAttribute("style", "background-color:#    d9e8e0")
             } else if (e.target.id == 'd1') {
                 document.getElementById('quary3').disabled = false
 
@@ -601,7 +601,7 @@
                 console.log(countTrueAnswer)
                 d0.disabled = false
                 d1.disabled = true
-                d0.setAttribute("style", "background-color:#efefef")
+                d0.setAttribute("style", "background-color:#    d9e8e0")
                 d1.setAttribute("style", "background-color:  #7eaf93  ")
             }
 
@@ -609,53 +609,11 @@
         })
 
         $('#quary1').click(function (e) {
-
-            if (any == 1) {
-                Swal.fire({
-                    title: 'اجابة صحيحة!',
-                    showClass: {
-                        popup: 'animate__animated animate__fadeInDown'
-                    },
-                    hideClass: {
-                        popup: 'animate__animated animate__fadeOutUp'
-                    }
-                })
-            } else {
-                Swal.fire({
-                    title: 'عذرا اجابة خاطئة',
-                    showClass: {
-                        popup: 'animate__animated animate__fadeInDown'
-                    },
-                    hideClass: {
-                        popup: 'animate__animated animate__fadeOutUp'
-                    }
-                })
-            }
+   
             $("#carouselExampleFade").carousel(4)
         })
         $('#quary2').click(function (e) {
-
-            if (any == 1) {
-                Swal.fire({
-                    title: 'اجابة صحيحة!',
-                    showClass: {
-                        popup: 'animate__animated animate__fadeInDown'
-                    },
-                    hideClass: {
-                        popup: 'animate__animated animate__fadeOutUp'
-                    }
-                })
-            } else {
-                Swal.fire({
-                    title: 'عذرا اجابة خاطئة',
-                    showClass: {
-                        popup: 'animate__animated animate__fadeInDown'
-                    },
-                    hideClass: {
-                        popup: 'animate__animated animate__fadeOutUp'
-                    }
-                })
-            }
+   
             $("#carouselExampleFade").carousel(5)
         })
         $('#quary3').click(function (e) {
@@ -664,28 +622,7 @@
                 tick.currentTime = 0;
                 sec = 0
                 clearInterval(timer);
-
-            if (any == 1) {
-                Swal.fire({
-                    title: 'اجابة صحيحة!',
-                    showClass: {
-                        popup: 'animate__animated animate__fadeInDown'
-                    },
-                    hideClass: {
-                        popup: 'animate__animated animate__fadeOutUp'
-                    }
-                })
-            } else {
-                Swal.fire({
-                    title: 'عذرا اجابة خاطئة',
-                    showClass: {
-                        popup: 'animate__animated animate__fadeInDown'
-                    },
-                    hideClass: {
-                        popup: 'animate__animated animate__fadeOutUp'
-                    }
-                })
-            }
+   
             document.getElementById('showresultcount').value = "درجتك :" + "3" + "/" + countTrueAnswer;
             document.getElementById('showresultcount').disabled = true
             document.getElementById('showe').setAttribute("style", "display:';'")
@@ -1031,7 +968,7 @@
             height: 75px;
             padding: 10px;
             border: 1px solid black;
-            background-color: #F5F5F5;
+             
             margin: 10px;
             color: black !important;
             font-weight: bold;
@@ -1074,7 +1011,7 @@
             height: 75px;
             padding: 10px;
             border: 1px solid black;
-            background-color: #F5F5F5;
+             
 
         }
 
