@@ -24,7 +24,7 @@
 
     <div id="carouselExampleFade" data-bs-interval="false" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item active">
+            <div class="carousel-item ">
                 <div class="container">
 
 
@@ -52,7 +52,7 @@
                 </div>
             </div>
 
-            <div class="carousel-item">
+            <div class="carousel-item active">
                 <div class="container">
                     <div class="row justify-content-end">
                         <img style="height: 144px !important; padding: 24px" class="col-md-3 logo"
@@ -100,7 +100,7 @@
                 </div>
                 <div class="container">
                     <div class="row justify-content-center">
-                        <h4 class="col-md-6 font animate__animated animate__rotateIn"> وظائف العلاقات العامة
+                        <h4 style="max-width: 25%;" class="col-md-6 font animate__animated animate__rotateIn"> وظائف العلاقات العامة
                         </h4>
                     </div>
                     <div class="row animate__animated animate__backInUp">
@@ -320,21 +320,27 @@
             $("#carouselExampleFade").carousel(2)
         });
         $("#one").click(function () {
+            document.getElementById("one").style.border = "2px outset rgb(96, 97, 20)";
             $("#carouselExampleFade").carousel(3)
         });
         $("#two").click(function () {
+            document.getElementById("two").style.border = "2px outset rgb(96, 97, 20)";
             $("#carouselExampleFade").carousel(4)
         });
         $("#three").click(function () {
+            document.getElementById("three").style.border = "2px outset rgb(96, 97, 20)";
             $("#carouselExampleFade").carousel(5)
         });
         $("#four").click(function () {
+            document.getElementById("four").style.border = "2px outset rgb(96, 97, 20)";
             $("#carouselExampleFade").carousel(6)
         });
         $("#five").click(function () {
+            document.getElementById("five").style.border = "2px outset rgb(96, 97, 20)";
             $("#carouselExampleFade").carousel(7)
         });
         $("#six").click(function () {
+            document.getElementById("six").style.border = "2px outset rgb(96, 97, 20)";
             $("#carouselExampleFade").carousel(8)
         });
         $("#seven").click(function () {
@@ -353,19 +359,18 @@
         }
 
         .logo {
-            background: linear-gradient(to right, gold, darkorange);
-            color: black;
-            --width: 115px;
-            ;
-            --height: calc(var(--width) / 3);
-            width: var(--width);
-            height: var(--height);
-            text-align: center;
-            line-height: var(--height);
-            font-size: calc(var(--height) / 2.5);
-            font-family: sans-serif;
-
-            border: 1px solid darkgoldenrod;
+     
+	background: linear-gradient(to right, #7199db, #84a4d9);	color: black;
+    --width: 115px;;
+	--height: calc(var(--width) / 3);
+	width: var(--width);
+	height: var(--height);
+	text-align: center;
+	line-height: var(--height);
+	font-size: calc(var(--height) / 2.5);
+	font-family: sans-serif;
+ 
+	border: 1px solid #84a4d9;
             border-radius: 14px;
             transform: perspective(500px) rotateY(-15deg);
             text-shadow: 6px 3px 2px rgba(0, 0, 0, 0.2);
